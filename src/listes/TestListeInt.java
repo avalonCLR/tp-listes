@@ -1,10 +1,7 @@
 package listes;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
-
 
 public class TestListeInt {
 
@@ -13,7 +10,7 @@ public class TestListeInt {
 		//Créer une liste
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		int[] a = { -1, 5, 7, 3, -2, 4, 8, 5 };
-		
+		//foreach
 		for (Integer number : a) {
 			list.add(number);
 		}
@@ -26,11 +23,8 @@ public class TestListeInt {
 
 		
 		//Supprimez le plus petit élément de la liste
-		
 		Collections.sort(list); //tri en ordre croissant 
-		
 		list.remove(0); //suppression de la position 0 car list en tri croissant 
-		
 		System.out.println(list.toString());
 		
 		//changer les valeurs négatives en positives et afficher le résultat
